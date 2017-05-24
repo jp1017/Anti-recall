@@ -22,9 +22,9 @@ import java.util.List;
 import java.util.Locale;
 import java.util.Set;
 
-import static com.qiansheng.messagecapture.Debug.ServerOnConnected;
 import static com.qiansheng.messagecapture.MainActivity.File_Withdraw;
 import static com.qiansheng.messagecapture.XBitmap.getImageFileInQQ;
+
 
 /**
  * 防撤回神器 主要代码
@@ -61,7 +61,7 @@ public class MessageCaptor extends AccessibilityService {
 
     @Override
     protected void onServiceConnected() {
-        ServerOnConnected = true;
+//        ServerOnConnected = true;
         xFile = new XFile(this);
         QQ_NameList = getNameList();
         mHandler = new Handler();
@@ -69,7 +69,7 @@ public class MessageCaptor extends AccessibilityService {
 
     @Override
     public void onInterrupt() {
-        ServerOnConnected = false;
+//        ServerOnConnected = false;
     }
 
     @Override

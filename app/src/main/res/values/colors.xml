@@ -11,6 +11,8 @@
     <color name="colorBackground">#edf8fa</color>
     <color name="colorContent">#afdbfa</color>
 
+    <color name="colorName">#DAEEF2</color>
+
     <color name="colorMenu">#DAEEF2</color>
     <color name="colorBtnOn">#B8E6D6</color>
     <color name="colorBtnOff">#DAEEF2</color>

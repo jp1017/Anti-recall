@@ -16,9 +16,9 @@ import android.os.Environment;
 import android.os.Handler;
 import android.util.Log;
 
+
 import com.android.volley.RequestQueue;
 import com.android.volley.Response;
-import com.android.volley.Response.Listener;
 import com.android.volley.VolleyError;
 import com.android.volley.toolbox.JsonObjectRequest;
 import com.android.volley.toolbox.Volley;
@@ -65,7 +65,7 @@ class XUpdate {
         Log.d(TAG, "checkUpdate");
 
         RequestQueue requestQueue = Volley.newRequestQueue(mContext);
-        JsonObjectRequest request = new JsonObjectRequest(PATH, null, new Listener<JSONObject>() {
+        JsonObjectRequest request = new JsonObjectRequest(PATH, null, new com.android.volley.Response.Listener<JSONObject>() {
             @Override
             public void onResponse(JSONObject jsonObject) {
 //                Message msg = Message.obtain();
